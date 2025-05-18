@@ -2,7 +2,6 @@ package com.PL.premier_league.players;
 
 
 import lombok.*;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,7 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 @Getter
 @Data
-@EntityScan
 @Document(collection = "players")
 public class Player {
     @Id
