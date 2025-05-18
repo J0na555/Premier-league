@@ -1,4 +1,9 @@
 package com.PL.premier_league.players;
 
-public interface PlayerRepo {
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+
+public interface PlayerRepo extends MongoRepository < Player , String > {
+
+
 }
